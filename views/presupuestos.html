@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Presupuestos</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+    <link rel="stylesheet" href="../css/stylesheet.css">
+    <link rel="alerts" href="./js/alerts.js">
+    <link rel="icon" type="image/x-icon" href="../images/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+        <!-- google fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+<!-- ========== NavBar ========== -->
+<header id="stickyNavbar">
+<nav class="navbar navbar-expand-lg">
+  <div class="container-fluid px-5">
+    <a class="navbar-brand" href="#">
+      <h2>Iron<span>Gym</span></h2>
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon">☰</span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" href="../index.html">Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./producto.html">Productos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./galeria.html">galeria</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="#">presupuestos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./contacto.html">contacto</a>
+        </li>
+      </ul>
+      <form class="d-flex">
+        <h3>+1 (744) 587-3122</h3>
+      </form>
+    </div>
+  </div>
+</nav>
+</header>
+
+<!-- jQuery and Bootstrap JavaScript -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<script src="../js/presupuestos.js"></script>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+
+<!-- ========== Formulario de contacto ========== -->
+<div class="hero">
+
+  <form id="Pform">
+
+    <div class="rowP">
+      <div class="input-group">
+        <input type="text" class="pInput" id="pNombre" maxlength="15" required>
+        <label for="pNombre" class="presupuestoLabel"><i class="fa-solid fa-user" id="pIcon1"></i> Tu Nombre</label>
+      </div>
+
+      <div class="input-group">
+        <input type="text" class="pInput" id="Papellido" required maxlength="40">
+        <label for="Papellido" class="presupuestoLabel"><i class="fa-solid fa-user" id="pIcon2"></i> Apellido</label>
+      </div>
+    </div>
+
+    <div class="input-group">
+      <input type="text" class="pInput" id="PnumeroDeContacto" maxlength="9" required>
+      <label for="PnumeroDeContacto" class="presupuestoLabel"><i class="fa-solid fa-phone" id="pIcon3"></i> Numero de contacto</label>
+    </div>
+
+    <div class="input-group">
+      <input type="text" class="pInput" id="PcorreoElectronico" required>
+      <label for="PcorreoElectronico" class="presupuestoLabel"><i class="fa-solid fa-envelope" id="pIcon4"></i> Correo electronico</label>
+    </div>
+
+
+    <div class="input-group">
+      <textarea class="pTextarea" id="pTextarea" rows="8" required></textarea>
+      <label for="pTextarea" class="presupuestoLabel"><i class="fa-solid fa-comments" id="pIcon5"></i> Tu mensaje</label>
+    </div>
+    <button type="submit" id="pButton"><i class="fa-solid fa-paper-plane" id="pIcon6"></i> ENVIAR</button>
+  </form>
+
+  <div id="error"></div>
+</div>
+
+
+<!-- ========== Formulario de presupuesto ========== -->
+<section class="presupuestoSection1">
+  <div class="Presupuesto-container1">
+      <h2>Presupuesto</h2>
+      <form>
+          <!-- Producto -->
+          <div class="form-group1">
+              <label for="producto">Producto</label>
+              <select id="producto" name="producto" required>
+                  <option value="" disabled selected>Seleccione un producto</option>
+                  <option value="musculacion">Musculacion (incluido con el plazo)</option>
+                  <option value="clases">Clases (20€)</option>
+                  <option value="personal_trainer">Personal Trainer (50€)</option>
+              </select>
+          </div>
+          
+          <!-- Plazo -->
+          <div class="form-group1">
+              <label for="plazo">Plazo</label>
+              <select id="plazo" name="plazo" required>
+                  <option value="" disabled selected>Seleccione un plazo</option>
+                  <option value="5">5 días (20€)</option>
+                  <option value="30">30 días (50€)</option>
+                  <option value="365">Anual (400€)</option>
+              </select>
+          </div>
+      
+          <!-- Extras -->
+          <div class="form-group1">
+              <label for="extras">Extras</label>
+              <select id="extras" name="extras" required>
+                  <option value="" disabled selected>Seleccione un extra</option>
+                  <option value="nutricionista">Nutricionista (30€)</option>
+                  <option value="suplementos">Suplementos con descuentos (60€)</option>
+                  <option value="amigo">Invitar un amigo (10€)</option>
+                  <option value="ninguna">Ninguna opcion</option>
+              </select>
+          </div>
+          
+          <!-- Boton para calcular presupuesto -->
+          <button type="button" id="Presupuesto_calculador" onclick="calcularPresupuesto()">Calcular Presupuesto</button>
+          <div id="resultado"></div>
+          
+          <!-- Notas -->
+          <div class="form-group1">
+              <label for="condiciones">Notas</label>
+              <textarea id="condiciones" name="condiciones" placeholder="Escriba su consulta.."></textarea>
+          </div>
+          
+          <!-- Aceptación de condiciones -->
+        <div class="form-group1">
+          <input type="checkbox" id="acepto" name="acepto" required>
+          <label for="acepto">Acepto las <a href="#" target="_blank">condiciones de privacidad</a></label>
+      </div>
+      
+      <!-- Botón de envío -->
+      <div class="form-group1">
+          <button type="submit">Enviar</button>
+      </div>
+  </form>
+</div>
+  </section>
+
+
+<!-- =================== FOOTER ========================= -->
+<section class="footer">
+  <div class="container py-4">
+    <div class="row py-5">
+      <div class="col-lg-4">
+        <h4>GYMFIT</h4>
+        <p class="py-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit repudiandae modi praesentium, possimus iste commodi ipsa officiis. Adipisci id, voluptatum et eveniet aliquam sapiente, rerum ex, error perferendis aut unde?
+        </p>
+        <span class="social"><i class="fab fa-instagram"></i></span>
+        <span class="social"><i class="fab fa-facebook px-2"></i></span>
+        <span class="social"><i class="fab fa-facebook-messenger"></i></span>
+        <span class="social"><i class="fab fa-google-plus px-2"></i></span>
+        <span class="social"><i class="fab fa-pinterest"></i></span>
+      </div>
+      <div class="col-lg-3 0ffset-col-md-3 col-sm-4 col-11 mb-2">
+        <h5 class="pb-4">QUICK LINKS</h5>
+
+        <p class="link"><span><i class="fas fa-angle-double-right"></i></span>About Us</p>
+        <p class="link"><span><i class="fas fa-angle-double-right"></i></span>About Us</p>
+        <p class="link"><span><i class="fas fa-angle-double-right"></i></span>About Us</p>
+        <p class="link"><span><i class="fas fa-angle-double-right"></i></span>About Us</p>
+        <p class="link"><span><i class="fas fa-angle-double-right"></i></span>About Us</p>
+      </div>
+      <div class="col-lg-4">
+        <h5 class="pb-4">HOME LOCATION</h5>
+        <p>Arizona 7088 Richmond tyh., Alexandria, MA USA 35006</p>
+        <p class="link pt-3">+1 (744) 587-3122</p>
+        <p class="link">Empresa@NoExistente.com</p>
+      </div>
+    </div>
+    <div class="row py-2">
+      <div class="col-lg-12">
+        <div class="card text-center py-2">
+          <p>Gymfit © 2024, Theme By<span>MATHEO.COM</span></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</body>
+</html>

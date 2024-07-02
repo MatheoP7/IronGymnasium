@@ -1,0 +1,78 @@
+[
+  {
+    "headline": "Descubren una nueva especie de Matheo en Argentina",
+    "author": "Juan Pérez",
+    "date": "2024-06-11",
+    "content": "Paleontólogos en Argentina han descubierto una nueva especie de dinosaurio que habitó la Tierra hace aproximadamente 70 millones de años. El hallazgo se realizó en la región de la Patagonia y ha generado gran entusiasmo en la comunidad científica.",
+    "location": "Patagonia, Argentina",
+    "categories": ["Ciencia", "Paleontología"],
+    "images": [
+      {
+        "url": "https://ingeoexpert.com/wp-content/uploads/2019/06/Fosil.jpg",
+        "caption": "Fósiles del nuevo dinosaurio descubierto en Argentina."
+      }
+    ],
+    "related_articles": [
+      {
+        "headline": "Los dinosaurios más grandes de en latioamerica",
+        "url": "https://www.nationalgeographicla.com/animales/2023/01/cuales-son-los-dinosaurios-mas-grandes-de-latinoamerica"
+      },
+      {
+        "headline": "La evolución de los dinosaurios: nuevos hallazgos",
+        "url": "https://example.com/evolucion-dinosaurios"
+      }
+    ]
+  },
+
+  {
+    "headline": "Descubren una nueva especie de Matheo en Mexico",
+    "author": "Puan Jerga",
+    "date": "2024-06-11",
+    "content": "Paleontólogos en Mexico han descubierto una nueva especie de matheo que habitó la Tierra hace aproximadamente 70 millones de años. El hallazgo ha generado gran entusiasmo en la comunidad científica.",
+    "location": "Patagonia, Argentina",
+    "categories": ["Ciencia", "Paleontología"],
+    "images": [
+      {
+        "url": "https://ingeoexpert.com/wp-content/uploads/2019/06/Fosil.jpg",
+        "caption": "Fósiles del nuevo Matheo descubierto en Mexico."
+      }
+    ],
+    "related_articles": [
+      {
+        "headline": "Los dinosaurios más grandes descubiertos en América del Sur",
+        "url": "https://example.com/dinosaurios-america-sur"
+      },
+      {
+        "headline": "La evolución de los dinosaurios: nuevos hallazgos",
+        "url": "https://example.com/evolucion-dinosaurios"
+      }
+    ]
+  },
+
+  {
+    "headline": "Descubren una nueva especie de Matheo en Canada",
+    "author": "Ujan erga",
+    "date": "2024-06-11",
+    "content": "Paleontólogos en Canada han descubierto una nueva especie de matheo que habitó la Tierra hace aproximadamente 70 millones de años. El hallazgo ha generado gran entusiasmo en la comunidad científica.",
+    "location": "Patagonia, Argentina",
+    "categories": ["Ciencia", "Paleontología"],
+    "images": [
+      {
+        "url": "https://ingeoexpert.com/wp-content/uploads/2019/06/Fosil.jpg",
+        "caption": "Fósiles del nuevo Matheo descubierto en Canada."
+      }
+    ],
+    "related_articles": [
+      {
+        "headline": "Los dinosaurios más grandes descubiertos en América del Sur",
+        "url": "https://example.com/dinosaurios-america-sur"
+      },
+      {
+        "headline": "La evolución de los dinosaurios: nuevos hallazgos",
+        "url": "https://example.com/evolucion-dinosaurios"
+      }
+    ]
+  }
+]
+
+
